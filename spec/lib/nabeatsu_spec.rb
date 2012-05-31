@@ -16,13 +16,25 @@ describe Nabeatsu do
       let(:n) { 6 }
       it { should == "hoge" }
     end
+    context "with 8" do
+      let(:n) { 8 }
+      it { should == "fuga" }
+    end
     context "with 13" do
       let(:n) { 13 }
       it { should == "hoge" }
     end
+    context "with 24" do
+      let(:n) { 24 }
+      it { should == "hoge fuga" }
+    end
     context "with 31" do
       let(:n) { 31 }
       it { should == "hoge" }
+    end
+    context "with 32" do
+      let(:n) { 32 }
+      it { should == "hoge fuga" }
     end
   end
 end
